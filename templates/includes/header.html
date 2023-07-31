@@ -1,0 +1,24 @@
+
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+225 0758426943</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> lun-Sam: 11h - 23h</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<header id="header" class="fixed-top d-flex align-items-cente">
+<div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+<h1 class="logo me-auto me-lg-0"><a href="{{url_for('accueil')}}">La Table</a></h1>
+{% include "includes/nav.html" %}
+<a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Reservé une table</a>
+</div>
+</header>

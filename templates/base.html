@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!-- Favicons -->
+  <link href="static/images/favicon-1.png" rel="icon">
+  <!-- <link href="static/images/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- css style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}" /> 
+  <!-- fin css style -->
+  <!--  vendor css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/animate.css/animate.compat.css') }}" /> 
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/aos/aos.css') }}" />  -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.rtl.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.rtl.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.rtl.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.rtl.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.rtl.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.rtl.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.rtl.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.rtl.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.rtl.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.rtl.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.rtl.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.rtl.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.rtl.min.css.map') }}" /> 
+
+   <!-- vendor boostrap icon -->
+ 
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/fonts/bootstrap-icons.woff') }}" />  -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/fonts/bootstrap-icons.woff2') }}" />  -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css') }}" />  -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css.map') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.json') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.scss') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/css/animations.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/css/boxicons.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/css/boxicons.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/css/transformations.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/fonts/boxicons.eot') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/fonts/boxicons.svg') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/fonts/boxicons.ttf') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/fonts/boxicons.woff') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/boxicons/fonts/boxicons.woff2') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/glightbox/css/glightbox.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/glightbox/css/glightbox.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/glightbox/css/plyr.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/glightbox/css/plyr.min.css') }}" /> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'vendor/swiper/swiper-bundle.min.css') }}" /> 
+  
+  <!-- fin vendor css  -->
+</head>
+<body>
+    {% include "includes/header.html" %}
+    {% block contentA %}
+    {% endblock contentA %}
+
+
+    <script src="{{ url_for('static', filename = 'vendor/aos/aos.cjs.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/aos/aos.esm.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/aos/aos.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.esm.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.esm.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.esm.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.esm.min.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/bootstrap/js/bootstrap.min.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/glightbox/js/glightbox.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/isotope-layout/js/isotope.pkgd.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/isotope-layout/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/swiper/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'vendor/swiper/js/swiper-bundle.min.js.map') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
+    {% include "includes/footer.html" %}
+
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+</body>
+</html>
